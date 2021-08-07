@@ -1,0 +1,83 @@
+.myNotebooks {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border: red;
+  height: 90vh;
+}
+.myNotebooks-pages{
+  
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: red;
+  height: 90vh;
+}
+.notebooks {
+  margin-top: 0rem;
+  /* border-style: solid; */
+  /* border-color: black; */
+  background-color: var(--main-main-color);
+  height: 85vh;
+  padding: 1rem 1rem;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+textarea {
+  resize: none;
+}
+.note {
+  border: none;
+  width: 90%;
+  height: 80%;
+  padding: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0rem;
+  background-color: var(--main-main-color);
+}
+
+
+.note-title {
+  border: none;
+  width: 90%;
+  padding: 0.4rem 0rem 0.4rem 1rem;
+
+  background-color: var(--main-main-color);
+}
+.mob-nav{
+  display: none;
+}
+.pages{
+  background-color: #ffffff;
+}
+@media  (max-width: 700px) {
+ .myNotebooks{
+   display: block;
+ }
+ .myNotebooks-pages{
+   display: block;
+ }
+ .side-nav-pages{
+   display: none;
+ }
+ .mob-nav{
+   display: block;
+ }
+ .notebooks{
+   position: absolute;
+    top: 4rem;
+    /* z-index: -1; */
+    padding: .5rem;
+ }
+ .page-title{
+   
+   border: none;
+    width: 90%;
+    padding-top: 4px;
+    padding-left: 0%;
+    background-color: none;
+    margin: 0px;
+    
+ }
+ 
+}

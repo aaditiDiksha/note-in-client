@@ -1,0 +1,98 @@
+.myNotebooks {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  border: red;
+  height: 90vh;
+}
+
+.notebooks {
+  margin-top: 0rem;
+  background-color: var(--main-main-color);
+  height: 85vh;
+  padding: 1rem 1rem;
+}
+.not-saved {
+  display: none;
+}
+.saved {
+  color: red;
+}
+.saved {
+  display: inline;
+  animation: hideAnimation 0s ease-in 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+h2 {
+  margin: 0;
+  margin-bottom: 0.2rem;
+}
+textarea {
+  resize: none;
+}
+.note {
+  border: none;
+  width: 90%;
+  height: 80%;
+  padding: .5rem;
+  padding-bottom: 0rem;
+  background-color: var(--main-main-color);
+}
+.page-title {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin: 0%;
+}
+.note-title {
+  border: none;
+  width: 90%;
+  padding: 0.4rem 0rem 0.4rem 1rem;
+  
+
+  background-color: var(--main-main-color);
+}
+.mob-nav {
+  display: none;
+}
+.message{
+  padding: 2rem;
+}
+
+@media (max-width: 700px) {
+  .myNotebooks {
+    display: block;
+  }
+  .side-nav-pages {
+    display: none;
+  }
+  .mob-nav {
+    display: block;
+  }
+  .notebooks {
+    display: block;
+
+    position: relative;
+    top: 0.4rem;
+    padding: 0.5rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    border: none;
+    width: 90%;
+    background-color: none;
+    margin: 0px;
+    padding: 0.5rem;
+  }
+  
+  .note {
+    padding: 5px 0% 0% 5px;
+  }
+}

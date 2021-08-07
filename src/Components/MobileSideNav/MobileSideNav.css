@@ -1,0 +1,50 @@
+.side-side-nav{
+
+    width: 200px;
+     height: 100%;
+  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:var(--main-side-color);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: aliceblue;
+}
+.menu{
+  color: aliceblue;
+    border: none;
+    font-size: 2rem;
+    background-color: #2B2E4A;
+    padding: 0;
+    position: absolute;
+    top: 13px;
+}
+.close-side-nav{
+    width: 0px;
+     height: 100%;
+  
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: aliceblue;
+
+
+}
+
+.close-btn-mob{
+    background: aliceblue;
+    border-radius: 50%;
+    padding: .2rem;
+        position: fixed;
+    top: 1.5rem;
+    left: 9.2rem;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,160 @@
+.side-nav {
+  margin: 2rem 0rem;
+  margin-top: 0%;
+  margin-bottom: 0rem;
+  padding: .5rem .5rem;
+  background-color: var(--main-side-color);
+  color: var(--main-side-text);
+  height: 88vh;
+  border-right: chartreuse;
+  margin-right: 1%;
+}
+.side-nav-content{
+  display: grid;
+  /* flex-direction: row; */
+  grid-template-rows: 90% 10% ;
+  height: 80vh;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  font-style: Roboto;
+  font-family: Roboto;
+  
+}
+
+.current-list-item{
+  
+  width: 50%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  padding: 0.5rem 0rem;
+  cursor: pointer;
+  color: cyan;
+  font-size: 1.4rem;
+}
+.list{
+  overflow: auto;
+  font-size: 1.2rem;
+}
+.save{
+  margin-bottom: 2px;
+}
+::placeholder{
+  text-align: center;
+}
+.add-content {
+  cursor: pointer;
+  display:grid;
+  grid-template-columns: 70% 30%;
+      width: 90%;
+    height: 90%;
+    font-size: 1.5rem;
+    
+    margin: 0px;
+}
+.add-content h4 {
+  margin: 0px;
+}
+.plus{
+  cursor: pointer;
+ font-size: 2rem;
+}
+.add-title {
+  position: relative;
+  top: 20rem;
+  left: 0rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  margin: 0px;
+}
+.mob-side-nav{
+  display: none;
+}
+
+.list-item{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  padding: 0.5rem 0rem;
+cursor: pointer;
+}
+@media screen and (min-width: 700px){
+.add-content:hover{
+  box-shadow: darkcyan;
+}
+.del-icon:hover{
+  color:crimson ;
+}
+.list-title:hover{
+color:deepskyblue;
+border-bottom:deepskyblue ;
+}
+}
+@media screen and (max-width: 700px) {
+
+  .mob-side-menu{
+    display: block;
+  }
+ 
+  .close-mob-side-menu{
+    display: none;
+  }
+  .pages-sub-menu{
+    display: block;
+  }
+  .close-pages-sub-menu{
+    display: none;
+  }
+  .side-nav {
+    
+    padding: 5%;
+    display: none;
+    
+  }
+  .open-side-nav {
+  margin: 2rem 0rem;
+  margin-top: 0%;
+  margin-bottom: 0rem;
+  padding: .5rem .5rem;
+  border-right: chartreuse;
+  color: var(--main-side-text);
+  background-color: var(--main-side-color);
+  margin-right: 1%;
+}
+  .mob-side-nav{
+  display: block;
+}
+  .side-nav-content{
+    height: 88.1vh;
+  }
+.heading{
+      margin: 0;
+    margin-bottom: .2rem;
+    position: absolute;
+    top: 19px;
+    left: 5px;
+}
+  
+  .add-content{
+        grid-template-columns: 70% 30%;
+    height: 3rem;
+    width: 88%;
+    
+  }
+  .add{
+    justify-self: end;
+    font-size: 1rem;
+    margin-left: 30px;
+  }
+  .list-item{    
+    font-size: 1.2rem;
+    width: 80%;
+}
+.note-title{
+  padding: 0px;
+  margin: 0%;
+}
+}

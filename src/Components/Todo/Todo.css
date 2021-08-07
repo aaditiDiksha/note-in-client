@@ -1,0 +1,134 @@
+.single-list-item{
+display: grid;
+grid-template-columns: .3fr .3fr 5fr ;
+padding: 0px;
+}
+.todo-content{
+    font-size: 1.25rem;
+}
+.input-content{
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+}
+.btn-add{
+        height: 2rem;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+
+    position: relative;
+    bottom: 2.2rem;
+    left: 18.5rem;
+    cursor: pointer;
+}
+.todo-main{
+    
+    margin:  0rem;
+    
+padding: 2rem 1.5rem;
+  background-color: var(--main-main-color);
+
+}
+.todo{
+    
+  display: grid;
+  grid-template-columns: 20% 80%;
+  border: red;
+  background-color: #ffff;
+}
+.todo-list{
+    margin-top: 0px;
+    padding-left: 0%;
+}
+
+.checkbox{
+width: 18px;
+height: 18px;
+position: absolute;
+cursor: pointer;
+}
+.not-check{
+    display: none;
+}
+.message{
+    padding: 2rem;
+}
+
+.input-list-item{
+margin: 1rem 2.8rem;
+margin-top: 40px;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+
+.del-btn{
+        background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.mob-nav{
+    display: none;
+}
+.not-saved {
+  display: none;
+}
+.saved {
+  color: red;
+}
+.saved {
+  display: inline;
+  animation: hideAnimation 0s ease-in 2s;
+  animation-fill-mode: forwards;
+}
+@media (max-width:700px){
+
+    .todo-nav{
+        display: none;
+    }
+    .mob-nav{
+        display: block;
+    }
+    .todo{
+    
+  display: block;
+  border: red;
+  height: 90vh;
+}
+.todo-main {
+    margin: 0rem;
+    height: 90vh;
+    padding: 0rem 0.5rem;
+        position: relative;
+    /* top: -40px; */
+    bottom: 1rem;
+}
+    .note-title{
+        border: none;
+    width: 90%;
+    
+    padding-left: 0%;
+    
+    margin: 1rem 0rem;
+}
+.input-content{
+    width: 11rem;
+    margin-left: 2px;
+}
+::placeholder{
+    text-align: center;
+}
+.input-list-item{
+    margin: 0px;
+}
+.btn-add{
+    left:12rem;
+}
+.single-list-item{
+    grid-template-columns: 15% 15% 70%;
+}
+}

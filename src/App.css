@@ -2,37 +2,149 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation {
+  height: 10vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main {
+  height: 90vh;
+}
+.button {
+  cursor: pointer;
+  border: none;
+  /* color: white; */
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.form-main {
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90vh;
+  background: url(./logo.png) no-repeat 50% 26%;
+  background-color: var(--main-side-color);
+}
+.registered {
+  color: crimson;
+      margin: 0 3rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.failed {
+  display: none;
+}
+.form {
+  /* background-color: #15172b; */
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  /* color: #eee; */
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtitle {
+  text-align: center;
+  /* color: #eee; */
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.hide-subtitle{
+    display: none;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: var(--main-side-color);
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  display: none;
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  /* // outline: 0y; */
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+
+.home {
+  font-size: 3rem;
+  color: #eee;
+  text-align: center;
+}
+
+.nav-p:hover {
+  color: #dc2f55;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.app-logo {
+  background-color: var(--main-side-color);
 }
