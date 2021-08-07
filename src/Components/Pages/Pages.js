@@ -65,13 +65,12 @@ const Pages = ({
         settingCurrentPages(pages, data, currentPage.pageid);
         setCurrentPage({ ...currentPage, content: content });
         onSetLoading(false);
-        setSave(false)
       })
       .catch((err) => {
         console.log(err);
         onSetLoading(false);
       });
-    // setTimeout(() => setSave(false), 500);
+    setTimeout(() =>{ console.log('inside timeout'); setSave(false)}, 500);
   };
 
   //---------------------------------- RETURN -------------------------------------------
