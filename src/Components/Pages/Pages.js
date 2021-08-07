@@ -32,7 +32,6 @@ const Pages = ({
 //-------------------------- FUNCTIONS -------------------------
   const toggleCurrentPage = (item) => {
     setSave(false)
-    console.log(save)
     const page = currentPages.filter((page) => page.pageid === item.pageid);
     setCurrentPage(page[0]);
   };
@@ -71,7 +70,7 @@ const Pages = ({
         console.log(err);
         onSetLoading(false);
       });
-    setTimeout(() =>{ console.log('inside timeout'); setSave(false)}, 300);
+    setTimeout(() =>{  setSave(false)}, 300);
   };
 
   //---------------------------------- RETURN -------------------------------------------
