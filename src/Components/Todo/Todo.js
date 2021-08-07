@@ -72,6 +72,7 @@ export default function Todo({ user, where }) {
     )
       .then((res) => res.json())
       .then((data) => {
+        console.log(data)
         setLoading(true);
         setAllListItems(data);
         setLoading(false);
