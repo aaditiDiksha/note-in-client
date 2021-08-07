@@ -17,7 +17,7 @@ const SideNav = ({
   return (
     <>
       <div className={view === "mobile" ? "open-side-nav" : "side-nav"}>
-        {console.log(items)}
+        {/* {console.log(items)} */}
         <h2 className="heading">
           {view === "mobile" && heading === "Pages" ? noteTitle : heading}
         </h2>
