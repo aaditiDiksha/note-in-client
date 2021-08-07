@@ -31,6 +31,7 @@ const Pages = ({
 
 //-------------------------- FUNCTIONS -------------------------
   const toggleCurrentPage = (item) => {
+    console.log(save)
     const page = currentPages.filter((page) => page.pageid === item.pageid);
     setCurrentPage(page[0]);
   };
