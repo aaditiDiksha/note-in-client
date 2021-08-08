@@ -72,19 +72,17 @@ export default function Todo({ user, where }) {
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         setLoading(true);
         setAllListItems(data);
         setLoading(false);
         setSave(true);
       })
       .catch((err) => {
-        console.log(err);
+        console.log('unable to save');
         setLoading(false);
       });
     setTimeout(() => setSave(false), 500);
 
-    //if currentpages is empty then set it
   };
 
   // ----------------------------- TODO OPERATIONS --------------------------------
