@@ -101,7 +101,7 @@ const MyNotebooks = ({where,user})=> {
         setLoading(true);
 
     fetch(
-      `https://shielded-earth-87111.herokuapp.com/profile/delNotebook/${delItem.notebookid}`,
+      `https://shielded-earth-87111.herokuapp.com/profile/delNotebook/${delItem.notebookid}/${user.userid}`,
       {
         method: "post",
         headers: { "Content-Type": "application/json" },
